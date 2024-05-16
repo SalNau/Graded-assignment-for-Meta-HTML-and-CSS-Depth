@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 7, 7);
+    color: var(--color-font);
+  }
+  
+  
+  /*=============================================
+  =            Header            =
+  =============================================*/
+  header,nav{
+    margin:0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f5f0f0;
+    color: #f5f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    padding-top: 12px;
+  }
+  header img {
+    width: 150px;
+    height: auto;
+  }
+  /*=====  End of Header  ======*/
+  
+  /*=============================================
+  =            Nav            =
+  =============================================*/
+  nav {
+    background-color: #f5f0f0; 
+    padding: 2rem 0; /* Add padding to top and bottom */
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .nav-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 0.0625rem rgb(7, 7, 7);
+    border-radius: 0.25rem;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    box-shadow: 0.0625rem 0.0625rem 0.25rem 0.0625rem rgb(10, 10, 10);
+  }
+  .nav-link:hover {
+    transition: 0.5s;
+    background-color: rgb(157, 157, 177);
+  }
+  /*=====  End of nav block  ======*/
+  
+  /*=============================================
+  =            Main            =
+  =============================================*/
+  /*map*/
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+iframe{
+    width: 90%;
+    height: 600px;
+    filter: invert(100%);
+}
+/*Contact Details*/
+/*Callback Form*/
+
+.contact-sections {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+.contact-details,
+.callback-form {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+.contact-details h2,
+.callback-form h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #000;
+    margin-bottom: 10px;
+}
+.contact-details p,
+.callback-form p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    height: 40px;
+    font-size: 16px;
+}
+
+small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+  /*=============================================
+  =            Footer            =
+  =============================================*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color:#f5f0f0;
+    color: #0c0c0c;
+    padding-top: 12px;
+  }
+  footer div {
+    max-width: calc(50%-2rem);
+  }
+  footer img {
+    height: 3.125rem;
+    width: 7.42rem;
+  }
+  /*=====  End of Footer  ======*/
+  /* Default styles */
+.container {
+  width: 100%;
+}
+
+/* Media query for tablets (600px - 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    width: 80%; /* Adjust width for medium-sized screens */
+  }
+}
+
+/* Media query for small screens (less than 600px, typical smartphones) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%; /* Adjust width for small screens */
+  }
+}

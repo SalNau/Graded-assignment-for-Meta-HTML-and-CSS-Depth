@@ -1,0 +1,511 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 7, 7);
+    color: var(--color-font);
+  }
+  
+ 
+  /*=============================================
+  =            Variables            =
+  =============================================*/
+  :root {
+    --gradient: linear-gradient(
+      90deg,
+      #4d016050,
+      #0000ff50,
+      #ff000050,
+      #fffb0050,
+      #ff000050,
+      #0000ff50,
+      #4d016050
+    );
+    --color-bg: #000000;
+    --color-font: #ffffff;
+    --color-scheme-1: #22087d;
+    --color-scheme-2: #feda0a;
+    --color-scheme-3: #c24908;
+  }
+  
+  /*=====  End of Variables  ======*/
+  
+  /*=============================================
+  =            Header            =
+  =============================================*/
+  header,nav{
+    margin:0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f5f0f0;
+    color: #f5f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    padding-top: 12px;
+  }
+  header img {
+    width: 150px;
+    height: auto;
+  }
+  /*=====  End of Header  ======*/
+  
+  /*=============================================
+  =            Nav            =
+  =============================================*/
+  nav {
+    background-color: #f5f0f0; 
+    padding: 2rem 0; /* Add padding to top and bottom */
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .nav-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 0.0625rem rgb(7, 7, 7);
+    border-radius: 0.25rem;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    box-shadow: 0.0625rem 0.0625rem 0.25rem 0.0625rem rgb(10, 10, 10);
+  }
+  .nav-link:hover {
+    transition: 0.5s;
+    background-color: rgb(157, 157, 177);
+  }
+  /*=====  End of Section comment block  ======*/
+  
+  /*=============================================
+  =            Main            =
+  =============================================*/
+  main {
+    flex: 1;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  main section:nth-child(2) {
+    flex: 1;
+    margin-block: 3rem;
+  }
+  
+  main section:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 36rem;
+  }
+  main section:nth-child(1) img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    animation: moveBG 5s infinite linear;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    color: var(--color-font);
+    user-select: none;
+  }
+  .overlay p:nth-child(1) {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  .overlay p:nth-child(2) {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  @keyframes moveBG {
+    0% {
+      background-position: left;
+    }
+    50% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+  }
+  
+  main section:nth-child(2) {
+    align-self: center;
+    margin-inline: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 53.125rem;
+  }
+  main section:nth-child(1),
+  main section:nth-child(2) article {
+    margin: 0 auto;
+  }
+  
+  #info {
+    font-size: 1.2rem;
+    max-width: 50rem;
+    background-color: #00000070;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .offer-button {
+    display: inline-block; 
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center; 
+    margin-top: 10px; 
+    font-size: 1rem; 
+}
+
+.offer-button:hover {
+    background-color: #f30c0c;
+}
+
+.offer-button i {
+    margin-left: 5px;
+}
+
+  /*=====  End of Main  ======*/
+  
+  /*=============================================
+  =            About M.G            =
+  =============================================*/
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 8px;
+  }
+.about-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f1f0f0;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.about-title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.about-title:hover::after {
+    transform: scaleX(1);
+}
+
+  .about-mg {
+    text-align: center; 
+    margin-bottom: 8px; 
+  }
+  
+  .about-mg p {
+    font-weight: bold; 
+    font-size: 20px; 
+    color: #f1f0f0; 
+  }
+  /*=============================================
+  =            Brand Card            =
+  =============================================*/
+ 
+/* What's New Title */
+.whats-new {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.whats-new-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f1f0f0;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.whats-new-title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.whats-new-title:hover::after {
+    transform: scaleX(1);
+}
+
+/* Brand Card */
+#products {
+    text-align: center; /* Center the brand cards */
+}
+
+.brand-card {
+    transition: transform 500ms;
+    width: 200px;
+    height: 350px;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    vertical-align: top; 
+    overflow: hidden;
+}
+
+.brand-card:hover {
+    transform: scale(1.1);
+}
+
+.brand-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.brand-card .brand-description {
+    height: 90px; /* Set a fixed height for description */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.order-btn {
+    position: relative; /* Use relative positioning */
+    display: block; /* Ensure the button takes up full width */
+    margin: 10px auto 0; /* Add margin to the top and center horizontally */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1; /* Ensure buttons are above other content */
+}
+.order-btn i {
+    margin-left: 5px;
+}
+
+  /*=====  End of Brand Card  ======*/
+
+    /*=============================================
+  =            Explore More button        =
+  =============================================*/
+  
+  .product-button{
+    position: relative; 
+    display: block; 
+    margin: 10px auto 0; 
+    background-color: white;
+    color: #070707;
+    border: 0.0625rem rgb(7, 7, 7);;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1; 
+    box-shadow: 0.0625rem 0.0625rem 0.25rem 0.0625rem rgb(241, 240, 240); 
+    border-radius: 0.25rem;
+    
+}
+.product-button i{
+    margin-left: 5px;
+}
+
+.product-button:hover {
+  background-color: #0056b3;
+}
+
+/*=====  End of Explore More button  ======*/
+  /*=============================================
+  =            Banner-container       =
+  =============================================*/
+/* Banner */
+.banner-container {
+  background-color: #f5f0f0;
+  padding: 50px; /*20px*/
+  display: flex;
+  justify-content: space-between; /*flex-direction: column;*/
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 10px; /* Adjust top position */
+  left: 50%; /* Move to the center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  max-width: 500px; /* Adjust max width */
+}
+
+.banner-content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.banner-content h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.banner-content p {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.banner-button{
+  background-color: #000000;
+  color: white;
+  position: relative; 
+  display: block; 
+  margin: 10px auto 0; 
+  border: 0.0625rem rgb(194, 189, 189);;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1; 
+  box-shadow: 0.0625rem 0.0625rem 0.25rem 0.0625rem rgb(241, 240, 240); 
+  border-radius: 0.25rem;
+}
+
+.banner-button:hover {
+  background-color: #0056b3;
+}
+
+.banner-image {
+  max-width: 20%;
+  margin-top: 20px; 
+  transition: filter 0.3s ease; /* Smooth transition for the effect */
+}
+
+.banner-image:hover {
+  filter: brightness(0.8); /* Darken the image on hover */
+}
+
+  
+/*=====  End of banner-container  ======*/
+
+  /*=============================================
+  =            Card Container        =
+  =============================================*/
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+/* Individual Card */
+.card {
+  flex: 1; /* Each card takes equal width */
+  margin: 0 10px; /* Adjust spacing between cards */
+  height: 400px; /* Set a fixed height for all cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%; /* Make the image fill the card */
+  height: 100%;
+  border-radius: 10px; /* Add rounded corners */
+}
+
+/*=====  End of card-container  ======*/
+
+  /*=============================================
+  =            Footer            =
+  =============================================*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color:#f5f0f0;
+    color: #0c0c0c;
+    padding-top: 12px;
+  }
+  footer div {
+    max-width: calc(50%-2rem);
+  }
+  footer img {
+    height: 3.125rem;
+    width: 7.42rem;
+  }
+  /*=====  End of Footer  ======*/
+  
+/* Default styles */
+.container {
+  width: 100%;
+}
+
+/* Media query for tablets (600px - 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    width: 80%; /* Adjust width for medium-sized screens */
+  }
+}
+
+/* Media query for small screens (less than 600px, typical smartphones) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%; /* Adjust width for small screens */
+  }
+}

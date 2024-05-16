@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="author" content="Salma Ubaidulla" />
+    <meta
+      name="description"
+      content="Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      property="og:description"
+      content="Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries."/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="./styles2.css" />
+    <title>Mangata and Gallo</title>
+    <link rel="icon" href="./logos/Asset 1@3x.png" />
+  </head>
+  <body>
+    <header>
+    <!--script src="cart.js"></script-->
+    <script src="scrollToTop.js" defer></script>
+    <script src="cart.js" defer></script>
+    <header>
+      <div class="logo-container">
+        <img src="./logos/Asset 1@3x.png" alt="Mangata and Gallo Logo" />
+       </div>
+       <nav> 
+        <ul>
+          <li><a class="nav-link" href="index.html">home</a></li>
+          <li><a class="nav-link" href="#">products</a></li>
+          <li><a class="nav-link" href="contact.html">contact</a></li>
+          <li class="cart-icon" onclick="toggleCart()">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span class="cart-count">0</span>
+          </li>
+        </ul>
+    </nav>
+  </header>
+
+    </header>
+   
+
+    <div class="display">
+      
+
+    <aside class="category-list">
+      <h2>CATEGORY</h2>
+      <ul>
+        <li><a href="#ring">Ring</a></li>
+        <li><a href="#earrings">Earring</a></li>
+        <li><a href="#necklace">Necklace</a></li>
+        <li><a href="#wrist">Wrist Wear</a></li>
+        <li><a href="#pendant">Pendant</a></li>
+        <li><a href="#baby">Baby Collections</a></li>
+        <li><a href="#couple">Couple Collections</a></li>
+      </ul>
+    </aside>
+
+
+    <div class="cart-container">
+      <div class="cart-toggle">
+          <button class="close-btn" onclick="toggleCart()">
+              <i class="fas fa-times"></i>
+          </button>
+          <h2>Shopping Cart</h2>
+         <div class="cart-items"></div>
+         <div class="cart-total">Total: $0.00</div>
+         <button class="checkout-button">Proceed to Checkout</button> 
+      </div> 
+  </div>
+
+
+        <main>
+            <section id="ring" class="product-section">
+              <div class="product-category">
+                <h2>Ring</h2>
+                <div class="product-list">
+                <div class="product-item">
+                  <img src="./images/ring-1.PNG" alt="Product-ring-1">
+                     <div class="product-name">
+                         <p>Center heart Stone</p>
+                     </div>
+                     <div class="product-details">
+                      <span class="product-price">$199.70</span>
+                      <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                     </div>
+                  </div>
+
+
+                <div class="product-item">
+                    <img src="./images/ring-2.PNG" alt="Product-ring-2">
+                    <div class="product-name">
+                      <p>Center Stone</p>
+                    </div>
+                    <div class="product-details">
+                      <span class="product-price">$196.99</span>
+                      <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img src="./images/ring-3.PNG" alt="Product-ring-3">
+                    <div class="product-name">
+                      <p>Enduring Love</p>
+                    </div>
+                    <div class="product-details">
+                      <span class="product-price">$236.99</span>
+                      <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img src="./images/ring-4.PNG" alt="Product-ring-4">
+                    <div class="product-name">
+                      <p>Engagement Ring 1</p>
+                    </div>
+                    <div class="product-details">
+                      <span class="product-price">$436.99</span>
+                      <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img src="./images/ring-5.PNG" alt="Product-ring-5">
+                    <div class="product-name">
+                      <p>Engagement Ring 2</p>
+                    </div>
+                    <div class="product-details">
+                      <span class="product-price">$456.99</span>
+                      <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+            </section>  
+            
+            <section id="earrings" class="product-section">
+              <div class="product-category">
+              <h2>Earring</h2>
+              <div class="product-list">
+              <div class="product-item">
+                <img src="./images/earring-1.PNG" alt="Product-earring-1">
+                <div class="product-name">
+                  <p>Hoop Stud</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$99.70</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+
+              <div class="product-item">
+                  <img src="./images/earring-2.PNG" alt="Product-earring-2">
+                  <div class="product-name">
+                    <p>Love of String</p>
+                  </div>
+                  <div class="product-details">
+                    <span class="product-price">$136.99</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <img src="./images/eaaring-3.PNG" alt="Product-earring-2">
+                  <div class="product-name">
+                    <p>Oval Centered</p>
+                  </div>
+                  <div class="product-details">
+                    <span class="product-price">$136.99</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+              </div>
+          </section> 
+
+          <section id="necklace" class="product-section">
+            <div class="product-category">
+              <h2>Necklace</h2>
+              <div class="product-list">
+              <div class="product-item">
+                <img src="./images/necklace-1.PNG" alt="Product 1">
+                <div class="product-name">
+                  <p>Charming Beauty</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$178.99</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+
+              <div class="product-item">
+                  <img src="./images/necklace-2.PNG" alt="Product 2">
+                  <div class="product-name">
+                    <p>Eternal Love</p>
+                  </div>
+                  <div class="product-details">
+                    <span class="product-price">$230.99</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <img src="./images/necklace-3.PNG" alt="Product 3">
+                  <div class="product-name">
+                    <p>Valentines</p>
+                  </div>
+                  <div class="product-details">
+                    <span class="product-price">$159.99</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <img src="./images/necklace-4.PNG" alt="Product 4">
+                  <div class="product-name">
+                    <p>Night out spark</p>
+                  </div>
+                  <div class="product-details">
+                    <span class="product-price">$299.99</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="wrist" class="product-section">
+              <div class="product-category">
+              <h2>Wrist Wear</h2>
+              <div class="product-list">
+              <div class="product-item">
+                <img src="./images/wrist-1.PNG" alt="Product-wrist-1">
+                <div class="product-name">
+                  <p>Simple Elegant Wear</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$99.70</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+
+              <div class="product-item">
+                  <img src="./images/wrist-2.PNG" alt="Product-wrist-2">
+                  <div class="product-name">
+                    <p>Charming Beauty</p>
+                  </div>
+                  <div class="product-details">
+                    <span class="product-price">$136.99</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <img src="./images/wrist-3.PNG" alt="Product-wrist-2">
+                  <div class="product-name">
+                    <p>Diamond Love</p>
+                  </div>
+                  <div class="product-details">
+                    <span class="product-price">$136.99</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+              </div>
+          </section> 
+
+          <section id="pendant" class="product-section">
+            <div class="product-category">
+              <h2>Pendant</h2>
+              <div class="product-list">
+              <div class="product-item">
+                <img src="./images/pendant-1.PNG" alt="Product-pendant-1">
+                   <div class="product-name">
+                       <p>Paisley Diamond</p>
+                   </div>
+                   <div class="product-details">
+                    <span class="product-price">$219.70</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                   </div>
+                </div>
+
+
+              <div class="product-item">
+                  <img src="./images/pendant-2.PNG" alt="Product-pendant-2">
+                  <div class="product-name">
+                    <p>Checquered Diamond</p>
+                  </div>
+                  <div class="product-details">
+                    <span class="product-price">$336.99</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <img src="./images/pendant-3.PNG" alt="Product-pendant-3">
+                  <div class="product-name">
+                    <p>Graceful Diamond</p>
+                  </div>
+                  <div class="product-details">
+                    <span class="product-price">$296.99</span>
+                    <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+              </div>
+
+          </section>  
+          
+          <section id="baby" class="product-section">
+            <div class="product-category">
+            <h2>Baby Collections</h2>
+            <div class="product-list">
+            <div class="product-item">
+              <img src="./images/baby-1.PNG" alt="Product-1">
+              <div class="product-name">
+                <p>Chain</p>
+              </div>
+              <div class="product-details">
+                <span class="product-price">$319.70</span>
+                <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+
+            <div class="product-item">
+                <img src="./images/baby-2.PNG" alt="Product-2">
+                <div class="product-name">
+                  <p>Ear Stud</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$136.99</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <img src="./images/baby-3.PNG" alt="Product-3">
+                <div class="product-name">
+                  <p>Bracelet</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$436.99</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+            </div>
+        </section> 
+
+        <section id="couple" class="product-section">
+          <div class="product-category">
+            <h2>Couple Collections</h2>
+            <div class="product-list">
+            <div class="product-item">
+              <img src="./images/couple-1.PNG" alt="Product 1">
+              <div class="product-name">
+                <p>His and Her</p>
+              </div>
+              <div class="product-details">
+                <span class="product-price">$678.99</span>
+                <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+
+            <div class="product-item">
+                <img src="./images/couple-2.PNG" alt="Product 2">
+                <div class="product-name">
+                  <p>Crowning Love</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$730.99</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <img src="./images/couple-3.PNG" alt="Product 3">
+                <div class="product-name">
+                  <p>Heart Shape Forever Love</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$659.99</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <img src="./images/couple-4.PNG" alt="Product 4">
+                <div class="product-name">
+                  <p>Wave of Promise</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$899.99</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <img src="./images/couple-5.PNG" alt="Product 5">
+                <div class="product-name">
+                  <p>Wave Promise</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$859.99</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+                   
+              <div class="product-item">
+                <img src="./images/couple-6.PNG" alt="Product 6">
+                <div class="product-name">
+                  <p>Custom Made</p>
+                </div>
+                <div class="product-details">
+                  <span class="product-price">$939.99</span>
+                  <button class="add-to-cart-btn">Add to Cart<i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+
+
+            </div>
+
+            
+          </section>
+
+
+          <div id="scroll-to-top">
+            <i class="fas fa-arrow-up"></i>
+          </div>
+
+      </main>
+    </div>
+            
+    <footer>
+      <div>
+        <img src="./logos/Asset 1@3x.png" alt="Mangata and Gallo Logo" />
+      </div>
+      <div>
+        <p>Copyright M.G. jewelry store © 2024</p>
+      </div>
+    </footer>
+
+</body>
+</html>
