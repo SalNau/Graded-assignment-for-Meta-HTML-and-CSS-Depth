@@ -10,8 +10,9 @@ Course link-[HTML and CSS in depth by Meta](https://coursera.org/share/38de8b2a7
 **Screenshot of Home page**
 ![salnau github io_Graded-assignment-for-Meta-HTML-and-CSS-Depth_index html](https://github.com/SalNau/Graded-assignment-for-Meta-HTML-and-CSS-Depth/assets/138133199/b433eee6-b76c-4d1e-ad2b-5302cb56e6fd)
 
-**Video**
-https://github.com/SalNau/Graded-assignment-for-Meta-HTML-and-CSS-Depth/assets/138133199/b39cc23d-a86a-4907-a4d8-6f97d0c280d7
+**Check the Video**
+
+https://github.com/SalNau/Graded-assignment-for-Meta-HTML-and-CSS-Depth/assets/138133199/7cfd997d-3bf3-4dae-bc11-f382e3d43af7
 
 **Tech Stack**
 - HTML
