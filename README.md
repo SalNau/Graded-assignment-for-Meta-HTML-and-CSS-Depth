@@ -6,9 +6,12 @@
 
 Meta's "HTML and CSS in Depth" course on Coursera. This project is a responsive website for a jewelry shop, showcasing web development techniques using HTML, CSS, and a bit of JS.
 
-[HTML and CSS in depth by Meta](https://coursera.org/share/38de8b2a7df17afa0bbce5d4e0118442)
-
+Course link-[HTML and CSS in depth by Meta](https://coursera.org/share/38de8b2a7df17afa0bbce5d4e0118442)
+**Screenshot of Home page**
 ![salnau github io_Graded-assignment-for-Meta-HTML-and-CSS-Depth_index html](https://github.com/SalNau/Graded-assignment-for-Meta-HTML-and-CSS-Depth/assets/138133199/b433eee6-b76c-4d1e-ad2b-5302cb56e6fd)
+
+**Video**
+https://github.com/SalNau/Graded-assignment-for-Meta-HTML-and-CSS-Depth/assets/138133199/b39cc23d-a86a-4907-a4d8-6f97d0c280d7
 
 **Tech Stack**
 - HTML
