@@ -6,7 +6,7 @@
 
 Meta's "HTML and CSS in Depth" course on Coursera. This project is a responsive website for a jewelry shop, showcasing web development techniques using HTML, CSS, and a bit of JS.
 
-[Course link](https://coursera.org/share/38de8b2a7df17afa0bbce5d4e0118442)
+[HTML and CSS in depth by Meta](https://coursera.org/share/38de8b2a7df17afa0bbce5d4e0118442)
 
 ![salnau github io_Graded-assignment-for-Meta-HTML-and-CSS-Depth_index html](https://github.com/SalNau/Graded-assignment-for-Meta-HTML-and-CSS-Depth/assets/138133199/b433eee6-b76c-4d1e-ad2b-5302cb56e6fd)
 
@@ -38,7 +38,7 @@ The project consists of HTML, CSS, JS files, and an images folder.
 **Deployment**
 
 This project is deployed using GitHub Pages and can be viewed at the following URL:
-[Check the project](https://salnau.github.io/Graded-assignment-for-Meta-HTML-and-CSS-Depth/)
+[Mangata and Gallo by Salma](https://salnau.github.io/Graded-assignment-for-Meta-HTML-and-CSS-Depth/)
 
 **Author**
 
