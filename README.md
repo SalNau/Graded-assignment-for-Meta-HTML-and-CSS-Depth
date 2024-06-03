@@ -26,20 +26,21 @@ To view the project locally, follow these steps:
    git clone https://github.com/your-username/Graded-assignment-for-Meta-HTML-and-CSS-Depth.git
    
 2. Navigate to the project directory:
-cd Graded-assignment-for-Meta-HTML-and-CSS-Depth
+   ```sh
+   cd Graded-assignment-for-Meta-HTML-and-CSS-Depth
 
-3. Open the index.html file in your preferred browser to view the website.
+4. Open the index.html file in your preferred browser to view the website.
 
-Project Structure
+**Project Structure**
 
 The project consists of HTML, CSS, JS files, and an images folder.
 
-Deployment
+**Deployment**
 
 This project is deployed using GitHub Pages and can be viewed at the following URL:
-[M.G. Mangata and Gallo](https://salnau.github.io/Graded-assignment-for-Meta-HTML-and-CSS-Depth/)
+[Check the project](https://salnau.github.io/Graded-assignment-for-Meta-HTML-and-CSS-Depth/)
 
-Author
+**Author**
 
 Salma Ubaidulla
 
